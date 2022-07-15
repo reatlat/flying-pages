@@ -1,8 +1,15 @@
 {
-  "name": "flying-pages",
+  "name": "flying-pages-module",
   "version": "2.0.6",
   "description": "Load inner pages instantly, intelligently!",
   "main": "flying-pages.js",
+  "module": "flying-pages.js",
+  "exports": {
+    ".": {
+      "import": "./flying-pages.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "build": "babel flying-pages.js -o flying-pages.min.js"
   },
@@ -17,16 +24,28 @@
     "performance",
     "speed"
   ],
-  "author": "Gijo Varghese",
+  "author": "Alex Zappa",
+  "contributors": [
+    {
+      "name": "Alex Zappa",
+      "email": "alex@zappa.dev",
+      "url": "https://alex.zappa.dev/"
+    },
+    {
+      "name": "Gijo Varghese",
+      "email": "gijovarghese141@gmail.com",
+      "url": "https://wpspeedmatters.com/"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gijo-varghese/flying-pages/issues"
   },
   "homepage": "https://github.com/gijo-varghese/flying-pages#readme",
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "babel-preset-minify": "^0.5.1"
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-preset-minify": "^0.5.2"
   }
 }

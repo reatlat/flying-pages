@@ -1,4 +1,4 @@
-function flyingPages() {
+module.exports = (options = {}) => {
   const toPrefetch = new Set();
   const alreadyPrefetched = new Set();
 
@@ -141,10 +141,13 @@ function flyingPages() {
 
   // Default options incase options is not set
   const defaultOptions = {
-    delay: 0,
-    ignoreKeywords: [],
-    maxRPS: 3,
-    hoverDelay: 50,
+    ...{
+      delay: 0,
+      ignoreKeywords: [],
+      maxRPS: 3,
+      hoverDelay: 50,
+    },
+    ...options
   };
 
   // Combine default options with received options to create the new config and set the config in window for easy access
@@ -171,5 +174,3 @@ function flyingPages() {
   document.addEventListener("mouseout", mouseOutListener, listenerOptions);
   document.addEventListener("touchstart", touchStartListener, listenerOptions);
 }
-
-flyingPages();

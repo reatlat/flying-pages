@@ -2,39 +2,37 @@
   <img src="cover.png">
 </p>
 
-# Flying Pages
+# Flying Pages Module
+
+This is a fork of [Flying Pages](https://github.com/gijo-varghese/flying-pages) by [Gijo Varghese](https://wpspeedmatters.com/). 
+It is a module that can be used in any project.
 
 > Flying Pages prefetch pages before the user click on links, making them load instantly
 
-## Quick Links
-
-- Demo: Open [https://wpspeedmatters.com](https://wpspeedmatters.com) and click on any post
-- [WordPress Plugin](https://wordpress.org/plugins/flying-pages/)
-- [Quicklink vs Instant page vs Flying Pages](https://wpspeedmatters.com/quicklink-vs-instant-page-vs-flying-pages/)
-- Join our [Facebook Group](https://www.facebook.com/groups/wpspeedmatters/), a community of WordPress speed enthusiasts
-
-<a href="https://www.buymeacoffee.com/gijovarghese" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+Demo: Open [https://wpspeedmatters.com](https://wpspeedmatters.com) and click on any post
 
 ## Usage
 
 Quickstart:
 
-```html
-<script src="flying-pages.min.js"></script>
+```js
+
+import flyingPages from 'flying-pages';
+
+flyingPages();
 ```
 
 With options:
 
-```html
-<script>
-  window.FPConfig = {
+```js
+import flyingPages from 'flying-pages';
+
+flyingPages({
     delay: 0,
-    ignoreKeywords: [],
+    ignoreKeywords: ['/go/', '/amzn.to/'],
     maxRPS: 3,
     hoverDelay: 50,
-  };
-</script>
-<script defer src="flying-pages.min.js"></script>
+});
 ```
 
 - `delay`: Start prefetching after a delay (in seconds). Will be started when the browser becomes idle, using `requestIdleCallback`. Default to 0.
