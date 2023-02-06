@@ -1,8 +1,7 @@
-<p align="center">
-  <img src="cover.png">
-</p>
-
 # Flying Pages Module
+[![npm](https://img.shields.io/npm/v/flying-pages-module.svg)](https://npmjs.com/package/flying-pages-module)
+[![npm](https://img.shields.io/npm/dt/flying-pages-module.svg)](https://npmjs.com/package/flying-pages-module)
+[![license](https://img.shields.io/npm/l/flying-pages-module.svg)](https://npmjs.com/package/flying-pages-module)
 
 This is a fork of [Flying Pages](https://github.com/gijo-varghese/flying-pages) by [Gijo Varghese](https://wpspeedmatters.com/). 
 It is a module that can be used in any project.
@@ -17,7 +16,7 @@ Quickstart:
 
 ```js
 
-import flyingPages from 'flying-pages';
+import flyingPages from 'flying-pages-module';
 
 flyingPages();
 ```
@@ -25,7 +24,7 @@ flyingPages();
 With options:
 
 ```js
-import flyingPages from 'flying-pages';
+import flyingPages from 'flying-pages-module';
 
 flyingPages({
     delay: 0,
