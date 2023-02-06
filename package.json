@@ -1,6 +1,6 @@
 {
   "name": "flying-pages-module",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Load inner pages instantly, intelligently!",
   "main": "flying-pages.js",
   "module": "flying-pages.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gijo-varghese/flying-pages.git"
+    "url": "git+https://github.com/reatlat/flying-pages.git"
   },
   "keywords": [
     "flying-pages",
@@ -39,9 +39,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gijo-varghese/flying-pages/issues"
+    "url": "https://github.com/reatlat/flying-pages/issues"
   },
-  "homepage": "https://github.com/gijo-varghese/flying-pages#readme",
+  "homepage": "https://github.com/reatlat/flying-pages#readme",
   "devDependencies": {
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
