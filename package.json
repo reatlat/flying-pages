@@ -1,6 +1,6 @@
 {
   "name": "flying-pages-module",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Load inner pages instantly, intelligently!",
   "main": "flying-pages.js",
   "module": "flying-pages.js",
@@ -43,9 +43,9 @@
   },
   "homepage": "https://github.com/reatlat/flying-pages#readme",
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2",
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
     "babel-preset-minify": "^0.5.2"
   }
 }
